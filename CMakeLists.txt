@@ -1,3 +1,5 @@
+# Copyright (c) 2025 Robert Srinivasiah
+
 cmake_minimum_required(VERSION 3.31)
 project(ads_revue)
 
