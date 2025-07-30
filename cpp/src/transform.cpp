@@ -11,7 +11,7 @@ TEST_CASE("Simple transforms")
 {
     std::vector<uint32_t> input(100, static_cast<uint32_t>(5));
 
-    std::transform(input.begin(), input.end(), input.begin(), [](const uint32_t i) {
+    std::ranges::transform(input, input.begin(), [](const uint32_t i) {
         return i * 5;
     });
 
