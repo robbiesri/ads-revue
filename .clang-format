@@ -20,7 +20,7 @@ BinPackParameters: true
 
 BreakConstructorInitializers: BeforeComma
 
-ColumnLimit: 110
+ColumnLimit: 100
 
 Cpp11BracedListStyle: true
 
