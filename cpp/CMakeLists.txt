@@ -48,9 +48,11 @@ endfunction()
 # add_program_separate_tests(calculator src/calculator.cpp tests/calculator_test.cpp)
 
 # Optional: Add compile flags for better debugging
-if(CMAKE_BUILD_TYPE STREQUAL "Debug")
-    target_compile_options(doctest::doctest INTERFACE -Wall -Wextra -g)
-endif()
+#if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+#    target_compile_options(doctest::doctest INTERFACE -Wall -Wextra -g)
+#endif()
+
+add_program_embedded_test(transform src/transform.cpp)
 
 message(STATUS "")
 message(STATUS "Usage:")
