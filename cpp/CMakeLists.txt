@@ -54,6 +54,8 @@ endfunction()
 
 add_program_embedded_test(transform src/transform.cpp)
 
+add_program(blind75 src/blind75.cpp)
+
 message(STATUS "")
 message(STATUS "Usage:")
 message(STATUS "  1. Create your source files in src/")
